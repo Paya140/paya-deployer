@@ -1,0 +1,24 @@
+name: 'Deploy Github repo to server'
+description: 'Github Action for deploying your app to server.'
+author: 'IRZ Contributors'
+
+inputs:
+  server:
+    description: 'server url'
+    required: true
+  token:
+    description: 'App Token'
+    required: true
+  app:
+    description: 'App Name'
+    required: true
+  branch:
+    description: 'Branch to be deployed'
+    required: false
+  image:
+    description: 'Docker image to be deployed'
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
