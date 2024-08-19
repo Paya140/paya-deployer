@@ -2,6 +2,7 @@ name: 'Deploy Github repo to server'
 description: 'Github Action for deploying your app to server.'
 author: 'IRZ Contributors'
 
+
 inputs:
   server:
     description: 'server url'
